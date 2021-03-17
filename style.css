@@ -1,20 +1,7 @@
 /*Reservia css style*/
-@font-face {
-    font-family: 'ralewaythin_italic';
-    src: url('raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-italic-variablefont_wght-webfont.woff') format('woff'),
-         url('Raleway-Italic-VariableFont_wght.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('Raleway-VariableFont_wght.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+@font-face 
+{
+/* To do */
 }
 
 body
@@ -33,7 +20,6 @@ header
     width: 99%;
     position: relative;
     color: #0065FC;
-    font-family: 'ralewaythin', "Arial Black", Arial, Verdana, sans-serif;
 }
 
 #ancres
