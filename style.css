@@ -1,19 +1,46 @@
 /*Reservia css style*/
+@font-face {
+    font-family: 'ralewaythin_italic';
+    src: url('raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-italic-variablefont_wght-webfont.woff') format('woff'),
+         url('Raleway-Italic-VariableFont_wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('Raleway-VariableFont_wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
-    display:flex;
+    display: flex;
+    width: 99%;
+    font-size: 0,15%;
 }
 h1
 {
-    color: blue;
-    font-size : 24;
+    font-size : 25px;
 }
 
-/* Ajout de background colorés et bordures pour faciliter la 
-mise en page - to delete */
 header
 {
-    background-color: rgba(127, 255, 212, 0.712);
+    width: 99%;
+    position: relative;
+    color: #0065FC;
+    font-family: 'ralewaythin', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+#ancres
+{
+    position: absolute;
+    right: 1%;
+    top: 10%;
 }
 body, #searchbar, #hebergements, #populaires, #activites
 {
@@ -23,8 +50,19 @@ section
 {
     background-color: rgba(255, 127, 202, 0.603);
 }
+
+#hebergements
+{
+    background-color: #F2F2F2;
+}
+
+#populaires
+{
+    background-color: #F2F2F2;
+}
+
 footer
 {
-    background-color: rgba(127, 255, 133, 0.473);
+    background-color: #F2F2F2;
 }
 /* Fin du to delete */
