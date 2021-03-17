@@ -1,0 +1,11 @@
+/*Reservia css style*/
+body
+{
+    display:flex;
+}
+h1
+{
+    color: blue;
+    font-size : 24;
+}
+
