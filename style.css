@@ -1,25 +1,36 @@
 /*Reservia css style*/
-@font-face 
-{
-/* To do */
-}
 
-body
-{
-    display: flex;
-    width: 99%;
-    font-size: 0,15%;
-}
-h1
-{
-    font-size : 25px;
-}
+@font-face {
+    font-family: 'raleway_italic';
+    src: url('font/raleway-Italic-VariableFont_wght.ttf') format('ttf'), 
+         url('font/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway-VariableFont_wght.ttf') format('ttf'),
+         url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
 
 header
 {
     width: 99%;
     position: relative;
     color: #0065FC;
+    max-height: 6%;
+    border: 2px dashed rgb(204, 59, 146);
+}
+
+header a img
+{
+    height: 50px;
+    width: 120px;
 }
 
 #ancres
@@ -28,6 +39,46 @@ header
     right: 1%;
     top: 10%;
 }
+
+#ancres a
+{
+    color: #0065FC;
+    font-weight: bold;
+    margin-left: 40px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#ancres a:hover
+{
+    text-decoration-line: overline;
+    text-decoration-skip: space;
+    font-size: 20px;
+    font-weight: bolder;
+    /* Trouver comment espacer la ligne du haut des <a> */
+
+}
+
+body
+{
+    display: flex;
+    width: 99%;
+    height: 1400px;
+    font-size: 0,15%;
+    font-family:'raleway';
+    flex-wrap: wrap;
+    background-color: rgba(182, 169, 177, 0.26);
+}
+
+
+#searchbar
+{
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    margin-top: 5px;
+}
+
 body, #searchbar, #hebergements, #populaires, #activites
 {
     border: 2px dashed rgb(112, 92, 104);
