@@ -71,6 +71,10 @@ header a img
     padding: 40px 25px 0 25px;
 }
 
+h1
+{
+    font-weight: bold;
+}
 
 body
 {
@@ -95,6 +99,7 @@ body, #searchbar, #hebergements, #populaires, #activites
 {
     border: 2px dashed rgb(112, 92, 104);
 }
+
 section
 {
     background-color: rgba(255, 127, 202, 0.603);
