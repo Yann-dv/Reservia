@@ -9,31 +9,34 @@
 
 @font-face {
     font-family: 'raleway_italic';
-    src: url('font/raleway-Italic-VariableFont_wght.ttf') format('ttf'), 
-         url('font/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('font/raleway-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: 'font/raleway-Italic-VariableFont_wght.ttf' format('ttf'), 
+         'font/raleway-italic-variablefont_wght-webfont.woff2' format('woff2'),
+         'font/raleway-italic-variablefont_wght-webfont.woff' format('woff');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: oblique 0deg 20deg;
     }
 
 @font-face {
     font-family: 'raleway';
-    src: url('font/raleway-VariableFont_wght.ttf') format('ttf'),
-         url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
+    src: 'font/raleway-VariableFont_wght.ttf' format('ttf'),
+         'font/raleway-variablefont_wght-webfont.woff2' format('woff2'),
+         'font/raleway-variablefont_wght-webfont.woff' format('woff');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
     font-style: normal;
     }
 
 header
 {
+    font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     display: flex;
     width: 99%;
     position: relative;
     color: #0065FC;
     max-height: 6%;
     justify-content:space-around;
-    font-family: 'raleway', arial, sans-serif;  
+      
 }
 
 header a img
@@ -55,12 +58,10 @@ header a img
 
 #ancres a
 {
-    font-weight: bold;
     padding: 1em;
     font-size: 17px;
     text-decoration: none;
     margin: 0 3px 0 3px;
-    color: black;
 }
 
 #ancres a:hover
@@ -71,18 +72,33 @@ header a img
     padding: 40px 25px 0 25px;
 }
 
-h1
+a:visited
+{
+    color:black;
+}
+
+ #subscrib
 {
     font-weight: bold;
+    color: #0065FC;
+}
+
+h1
+{
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 body
 {
+    font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     display: flex;
     width: 99%;
     height: 1400px;
     font-size: 0,15%;
-    font-family:'raleway';
     flex-wrap: wrap;
 }
 
@@ -117,6 +133,7 @@ section
 
 footer
 {
+    font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     background-color: #F2F2F2;
 }
 /* Fin du to delete */
