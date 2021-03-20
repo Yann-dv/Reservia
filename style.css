@@ -1,4 +1,11 @@
 /*Reservia css style*/
+@media all and (max-width: 1024px)
+{
+    body, header, footer
+    {
+        width: auto;
+    }
+}
 
 @font-face {
     font-family: 'raleway_italic';
@@ -20,44 +27,50 @@
 
 header
 {
+    display: flex;
     width: 99%;
     position: relative;
     color: #0065FC;
     max-height: 6%;
-    border: 2px dashed rgb(204, 59, 146);
+    justify-content:space-around;
+    font-family: 'raleway', arial, sans-serif;  
 }
 
 header a img
 {
     height: 50px;
     width: 120px;
+    position: absolute;
+    top: 25%;
+    left: 0%;
 }
 
 #ancres
 {
     position: absolute;
-    right: 1%;
-    top: 10%;
+    right: 2%;
+    top: 50%;
+    
 }
 
 #ancres a
 {
-    color: #0065FC;
     font-weight: bold;
-    margin-left: 40px;
-    font-size: 18px;
+    padding: 1em;
+    font-size: 17px;
     text-decoration: none;
+    margin: 0 3px 0 3px;
+    color: black;
 }
 
 #ancres a:hover
 {
-    text-decoration-line: overline;
-    text-decoration-skip: space;
-    font-size: 20px;
-    font-weight: bolder;
-    /* Trouver comment espacer la ligne du haut des <a> */
-
+    color: #0065FC;
+    font-weight: bold;
+    border-top: 0.15rem solid #0065FC;
+    padding: 40px 25px 0 25px;
 }
+
 
 body
 {
@@ -67,7 +80,6 @@ body
     font-size: 0,15%;
     font-family:'raleway';
     flex-wrap: wrap;
-    background-color: rgba(182, 169, 177, 0.26);
 }
 
 
