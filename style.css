@@ -1,0 +1,117 @@
+/*Reservia css style*/
+@media all and (max-width: 1024px)
+{
+    body, header, footer
+    {
+        width: auto;
+    }
+}
+
+@font-face {
+    font-family: 'raleway_italic';
+    src: url('font/raleway-Italic-VariableFont_wght.ttf') format('ttf'), 
+         url('font/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway-VariableFont_wght.ttf') format('ttf'),
+         url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+header
+{
+    display: flex;
+    width: 99%;
+    position: relative;
+    color: #0065FC;
+    max-height: 6%;
+    justify-content:space-around;
+    font-family: 'raleway', arial, sans-serif;  
+}
+
+header a img
+{
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+}
+
+#ancres
+{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    
+}
+
+#ancres a
+{
+    font-weight: bold;
+    padding: 1em;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0 3px 0 3px;
+    color: black;
+}
+
+#ancres a:hover
+{
+    color: #0065FC;
+    font-weight: bold;
+    border-top: 0.15rem solid #0065FC;
+    padding: 40px 25px 0 25px;
+}
+
+
+body
+{
+    display: flex;
+    width: 99%;
+    height: 1400px;
+    font-size: 0,15%;
+    font-family:'raleway';
+    flex-wrap: wrap;
+}
+
+
+#searchbar
+{
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    margin-top: 5px;
+}
+
+body, #searchbar, #hebergements, #populaires, #activites
+{
+    border: 2px dashed rgb(112, 92, 104);
+}
+section
+{
+    background-color: rgba(255, 127, 202, 0.603);
+}
+
+#hebergements
+{
+    background-color: #F2F2F2;
+}
+
+#populaires
+{
+    background-color: #F2F2F2;
+}
+
+footer
+{
+    background-color: #F2F2F2;
+}
+/* Fin du to delete */
