@@ -27,48 +27,56 @@
     font-style: normal;
     }
 
-header
+body
 {
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     display: flex;
-    width: 99%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    height: 1400px;
+    font-size: 19px;
+    flex-wrap: wrap;
     position: relative;
+}
+
+header
+{
+    font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     color: #0065FC;
     max-height: 6%;
-    justify-content:space-around;
-      
+    justify-content:space-between;
+    background-color: bisque;
 }
 
 header a img
 {
-    height: 50px;
+    margin: 3vw 3vw 1.5vw 3.3vw;
+    height: auto;
     width: 120px;
-    position: absolute;
-    top: 25%;
-    left: 0%;
 }
 
-#ancres
+nav
 {
-    position: absolute;
-    right: 2%;
-    top: 50%;
-    
+position: absolute;
+right: 0;
+top: 3%;
 }
 
 #ancres a
 {
-    padding: 1em;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
-    margin: 0 3px 0 3px;
+    padding: 38px 30px 0 30px;
+    margin-top: 0;
+    margin-right: 2vw;
 }
 
 #ancres a:hover
 {
     color: #0065FC;
     font-weight: bold;
-    border-top: 0.15rem solid #0065FC;
+    border-top: 3px solid #0065FC;
     padding: 40px 25px 0 25px;
 }
 
@@ -79,53 +87,81 @@ a:visited
 
  #subscrib
 {
-    font-weight: bold;
+    font-weight: bolder;
     color: #0065FC;
 }
 
-body
+#search
 {
-    font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
-    display: flex;
-    width: 99%;
-    height: 1400px;
-    font-size: 19px;
-    flex-wrap: wrap;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    margin-bottom: 30px;
+    margin-top: 1px;
+    margin-left: 3.3vw;
 }
 
 h1
 {
-    position: absolute;
-    top: 14%;
-    left: 1%;
-    font-weight: bold;
-    font-size: 26px;
+margin-top: 50px;
+margin-left: 0;
+clear: left;
 }
 
 #searchbar
 {
-    position: absolute;
-    top: 20%;
-    left: 1%;
-    margin-top: 1px;
+    top: 40px;
+    margin-bottom: 30px;
+    margin-left: none;
+    display: block;
 }
 
-input[type=search]
- {
-    border: 2px solid #999;
-    border-radius: 20px;
-    font-size:large;
-    overflow: hidden;
+.mapmarker
+{
+    min-width: 60px;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-size: 25px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 1rem 1.25rem;
 }
 
-body, #searchbar, #hebergements, #populaires, #activites
+.searchfield
+{
+    border-top: solid #f2f2f2 1px;
+    border-bottom: solid #f2f2f2 1px;
+    border-left: none;
+    border-right: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    width: 300px;
+    padding: 1rem 1.25rem;
+}
+
+.searchbutton
+{
+    font-size: 25px;
+    background-color: #0065fc;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.25rem;
+}
+
+body, #hebergements, #populaires, #activites
 {
     border: 2px dashed rgb(112, 92, 104);
 }
 
 section
 {
-    background-color: rgba(255, 127, 202, 0.603);
+    background-color: rgba(231, 172, 207, 0.603);
 }
 
 #hebergements
@@ -143,4 +179,3 @@ footer
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     background-color: #F2F2F2;
 }
-/* Fin du to delete */
