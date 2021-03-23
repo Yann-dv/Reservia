@@ -178,12 +178,14 @@ clear: left;
     position: absolute;
     left: 1px;
     top: 24%;
+    width:100%;
     }
 
   .filters 
   {
     margin-bottom: 20px;
   }
+
   .filterstitle 
   {
     float: left;
@@ -218,7 +220,7 @@ clear: left;
   .filtericonpets, .filtericon 
   {
     background-color: #deebff;
-    padding: 17px 16px 18px 18px;
+    padding: 17px 16px 18px 20px;
     margin-right: 15px;
     border-radius: 50%;
     color: #0065fc;
@@ -226,7 +228,7 @@ clear: left;
   .filtericonfamilial 
   {
     background-color: #deebff;
-    padding: 17px 18px 18px 20px;
+    padding: 17px 18px 18px 22px;
     margin-right: 15px;
     border-radius: 50%;
     color: #0065fc;
@@ -242,24 +244,28 @@ clear: left;
   .infocoin 
   {
     float: left;
-    margin-right: 12px;
+    margin-right: 20px;
+    margin-left: -120px;
+    margin-top: 90px;
     font-size: 0.8em;
     border: solid #f2f2f2 2px;
     border-radius: 50%;
     color: #0065fc;
     padding: 0.4em 0.85em;
   }
-  .filter p 
-  {
-    margin-top: 28px;
-    font-size: 1em;
-  }
+
+.infocointext
+{
+    float: left;
+    margin-top: -10px;
+    margin-left: 60px;
+}
 
 #filters h2
 {
     float: left;
     margin-right: 2.2vw;
-    padding-top: 15px;
+    margin-top: 0.5%;
 }
 
 
@@ -268,14 +274,11 @@ body, #hebergements, #populaires, #activites
     border: 2px dashed rgb(112, 92, 104);
 }
 
-#filters
-{
-    background-color: #753f3f57;
-}
-
 #hebergements
 {
     background-color: #F2F2F2;
+    margin-left: 3.3vw;
+    margin-top: 400px;
 }
 
 #populaires
@@ -283,9 +286,15 @@ body, #hebergements, #populaires, #activites
     background-color: #F2F2F2;
 }
 
+#activites
+{
+    margin-left: 3.3vw;
+}
+
 footer
 {
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     background-color: #F2F2F2;
+    margin-left: 3.3vw;
 
 }
