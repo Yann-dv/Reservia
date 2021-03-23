@@ -268,33 +268,73 @@ clear: left;
     margin-top: 0.5%;
 }
 
-
-body, #hebergements, #populaires, #activites
-{
-    border: 2px dashed rgb(112, 92, 104);
-}
+/*///////////////SECTION3 hebergements//////////////*/
 
 #hebergements
 {
+    border: 2px dashed rgb(112, 92, 104);
+    margin-left: -160px;
     background-color: #F2F2F2;
-    margin-left: 3.3vw;
-    margin-top: 400px;
+    max-width: 80%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 500px;
 }
 
+#hebergements img
+{
+    height: 200px;
+    width: auto;
+}
+
+
+
+/*///////////////SECTION4 populaires//////////////*/
 #populaires
 {
     background-color: #F2F2F2;
 }
 
+/*///////////////SECTION5 activites//////////////*/
 #activites
 {
     margin-left: 3.3vw;
 }
 
+
+/*///////////////SECTION6 footer//////////////*/
 footer
 {
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     background-color: #F2F2F2;
     margin-left: 3.3vw;
 
+}
+
+/* Media queries */
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px){
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+/* TO DELETE */
+body, #populaires, #activites
+{
+    border: 2px dashed rgb(112, 92, 104);
 }
