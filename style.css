@@ -35,13 +35,15 @@ body
     font-size: 19px;
     position: relative;
     border: 4px dashed rgb(255, 63, 245);
-}
+  }
 
-#hebergements, #populaires, #activites
+#main
 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 /*///////////////HEADER///////////////*/
 header
 {
@@ -65,7 +67,7 @@ nav
     margin-left: 125px;
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 55px;
 }
 
 nav a
@@ -106,7 +108,7 @@ a:visited
 #search
 {
     position: absolute;
-    top: 5%;
+    top: 6%;
     left: 0%;
     margin-bottom: 30px;
     margin-top: 1px;
@@ -179,7 +181,7 @@ clear: left;
     margin-left: 3.3vw;
     position: absolute;
     left: 1px;
-    top: 10%;
+    top: 12%;
     width:100%;
   }
 
@@ -280,22 +282,14 @@ clear: left;
   {
     border: 2px dashed rgb(112, 92, 104);
     position: relative; 
-    margin-top: 600px;
+    margin-top: 500px;
     margin-left: 60px;
-    width: 50%;
+    width: 60%;
+    height: 630px;
     background-color: #F2F2F2;
-    justify-content:space-around;
     padding: 20px;
-    flex-wrap: wrap;
     border-radius: 20px 20px 20px 20px;
   }
-
-#hebergements img
-{
-    height: 200px;
-    width: 350px;
-}
-
 
 .hebergements_title
 {
@@ -304,19 +298,41 @@ clear: left;
   top: 20px;
 }
 
+.cardtitle
+{
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+p, i
+
+{
+  margin-left: 8px;
+  line-height: 0.5px;
+  font-size: 13px;
+}
+
 .card
 {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
   margin-top: 80px;
   padding-bottom: 12px;
+  width: 246px;
+  height: 180px;
+  border: 2px dashed rgb(112, 92, 104);
+  margin-left: 35px;
 }
 
-.cardimg
+#hebergements img
 {
-  padding: 8px 3px 3px 3px;
-  border: 1px solid white;
-  border-radius: 20px 20px;
+  height: 114px;
+  width: 236px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-left: 0px;
+  margin-top: 5px;
 }
 
 .starsblue
@@ -333,19 +349,19 @@ clear: left;
 #populaires
 {
     background-color: #F2F2F2;
-    margin-left: 60px;
-    margin-top: 0px;
-    height: 800px;
-    width: 30%;
+    margin-top: 500px;
+    margin-right: 30px;
+    height: 600px;
+    width: 30%
 }
 
 /*///////////////SECTION5 activites//////////////*/
 #activites
 {
     margin-left: 3.3vw;
-    width: 100%;
-    float: left;
-    margin-top: 300px;
+    width: 60%;
+    margin-bottom: 0px;
+    height: 500px;
 }
 
 
@@ -355,7 +371,6 @@ footer
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     background-color: #F2F2F2;
     margin-left: 3.3vw;
-
 }
 
 /* Media queries */
