@@ -141,6 +141,11 @@ a:visited
     padding: 1rem 1.25rem;
   }
 
+input::placeholder
+{
+  opacity: 1;
+}
+
 .searchbutton
   {
     font-size: 25px;
@@ -238,7 +243,7 @@ a:visited
     justify-content: space-between;
     border: 2px dashed rgb(112, 92, 104);
     width: 60%;
-    height: 630px;
+    height: 650px;
     background-color: #F2F2F2;
     padding: 20px;
     border-radius: 20px 20px 20px 20px;
@@ -251,59 +256,141 @@ a:visited
   flex-wrap: wrap;
   width: 100%;
 }
+
 .cardtitle
 {
-  margin-left: 8px;
-  font-size: 16px;
-  line-height: 18px;
+  padding-left: 8px;
+  font-size: 18px;
+  line-height: 1px;
 }
 
-.card p, i
-
+.card p
 {
-  margin-left: 8px;
-  line-height: 0.5px;
-  font-size: 13px;
+  padding-left: 8px;
+  line-height: 1px;
+  font-size: 15px;
 }
 
 .card
 {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
-  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
   width: 30%;
-  height: 180px;
+  height: 32%;
   border: 2px dashed rgb(112, 92, 104);
+  padding-left: 4px;
+  padding-top: 8px;
+  padding-right: 4px;
 }
 
 #hebergements img
 {
-  height: 114px;
+  height: 120px;
   width: 96%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-left: 0px;
-  margin-top: 5px;
+}
+
+.firststar
+{
+  padding-left: 8px;
 }
 
 .starsblue
 {
   color: #0065fc;
+  font-size: 15px;
 }
 
 .starsgrey
 {
-  color: #deebff
+  color: #deebff;
+  font-size: 15px;
+}
+
+.more
+{
+  display: flex;
+  font-size: 23px;
+  text-decoration: none;
 }
 
 /*///////////////SECTION4 populaires//////////////*/
 #populaires
 {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #F2F2F2;
-    height: 600px;
-    width: 30%
+    padding: 30px;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 30px;
+    margin-left: 10px;
+    height: 630px;
+    width: 26%
 }
+
+#populaires h3
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.famoustitle
+{
+  display:flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  font-size: 24px;
+  line-height: 2px;
+}
+
+.famousicon
+{
+  padding-top: 18px;
+  padding-right: 20px;
+  font-size: 26px;
+}
+
+.famouscard
+{
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: row;
+  width: 95%;
+  height: 23%;
+  border: 2px dashed rgb(112, 92, 104);
+  padding-left: 2px;
+  padding-top: 8px;
+  padding-right: 4px;
+}
+
+.famouscard p
+{
+  padding-left: 8px;
+  font-size: 16px;
+  line-height: 4px;
+}
+
+.famouscard h3
+{
+  padding-left: 8px;
+  font-size: 21px;
+  line-height: 20px;
+}
+
+#populaires img
+{
+  height: 140px;
+  width: 160px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 
 /*///////////////SECTION5 activites//////////////*/
 #activites
@@ -331,14 +418,16 @@ footer
     width: 24.99999%;
   }
   
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 991px) /*Tablettes*/
+  {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
     }
   }
   
-  @media only screen and (max-width: 500px){
+  @media only screen and (max-width: 768px) /*Smartphones*/
+  {
     .responsive {
       width: 100%;
     }
