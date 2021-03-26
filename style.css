@@ -34,7 +34,6 @@ body
     overflow-x: hidden;
     font-size: 19px;
     position: relative;
-    border: 4px dashed rgb(255, 63, 245);
   }
 
 #main
@@ -52,7 +51,6 @@ header
     color: #0065FC;
     height: 3%;
     max-width: 400px;
-    background-color: rgb(233, 130, 5);
 }
 
 header a img
@@ -112,10 +110,16 @@ a:visited
   margin-left: 3vw;
 }
 
+#search h1
+{
+  margin-bottom: 3px;
+}
+
 #search p
 {
-    font-size: 16px;
+    margin-top: 5px;
 }
+
 
 .mapmarker
   {
@@ -160,14 +164,20 @@ input::placeholder
     padding: 1rem 1.25rem;
   }
 /*///////////////SECTION2 filters//////////////*/
-
 #filters
   {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-left: 3vw;
+    margin-top: 2%;
   }
 
+.filterstitle
+
+{
+  margin-right: 50px;
+  line-height: 10px;
+}
   .icontextfilters 
   {
     font-weight: bold;
@@ -219,6 +229,14 @@ input::placeholder
     margin-right: 15px;
     border-radius: 50%;
     color: #0065fc;
+
+  }
+
+  .iconinfo
+  {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 3vw;
   }
 
   .infocoin 
@@ -241,13 +259,13 @@ input::placeholder
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 2px dashed rgb(112, 92, 104);
     width: 60%;
     height: 650px;
     background-color: #F2F2F2;
     padding: 20px;
     border-radius: 20px 20px 20px 20px;
     margin-left: 3vw;
+    margin-top: 50px;
   }
 
 #hebergements h2
@@ -335,7 +353,8 @@ input::placeholder
     margin-right: 30px;
     margin-left: 10px;
     height: 630px;
-    width: 26%
+    width: 26%;
+    margin-top: 50px;
 }
 
 #populaires h3
@@ -508,9 +527,42 @@ footer
 {
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     background-color: #F2F2F2;
-    margin-left: 3.3vw;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 3.3vw;
+    line-height: 1.5em;
+    margin-top: 50px;
 }
+
+footer a
+{
+  text-decoration: none;
+}
+
+.apropos
+{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 25%;
+  
+}
+.noshebergements
+{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 25%;
+}
+.assistance
+{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 25%;
+}
+
 
 /* Media queries */
 
@@ -534,9 +586,3 @@ footer
       width: 100%;
     }
   }
-  
-/* TO DELETE */
-#populaires, #activites
-{
-    border: 2px dashed rgb(112, 92, 104);
-}
