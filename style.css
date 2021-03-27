@@ -32,10 +32,17 @@ body
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
     margin:auto;
     overflow-x: hidden;
-    font-size: 19px;
+    font-size: 16px;
     position: relative;
-    
-  }
+    width: 100%;
+    height: 100%;
+}
+
+a
+{
+  color: black;
+  text-decoration: none;
+}
 
 #main
 {
@@ -71,7 +78,7 @@ nav
 
 nav a
 {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     padding: 38px 30px 0 30px;
     margin-top: 0;
@@ -101,6 +108,7 @@ nav a:hover
 a:visited
 {
     color:black;
+    text-decoration: none;
 }
 
 /*///////////////SECTION1 search//////////////*/
@@ -114,6 +122,7 @@ a:visited
 #search h1
 {
   margin-bottom: 3px;
+  font-size: 22px;
 }
 
 #search p
@@ -127,7 +136,7 @@ a:visited
     min-width: 60px;
     align-items: center;
     background-color: #f2f2f2;
-    font-size: 26px;
+    font-size: 18px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 1rem 1.25rem;
@@ -141,7 +150,7 @@ a:visited
     border-right: none;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 18px;
     width: 300px;
     padding: 1rem 1.25rem;
   }
@@ -153,7 +162,7 @@ input::placeholder
 
 .searchbutton
   {
-    font-size: 25px;
+    font-size: 18px;
     background-color: #0065fc;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
@@ -274,19 +283,21 @@ input::placeholder
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  font-size: 22px;
 }
 
 .cardtitle
 {
   padding-left: 8px;
-  font-size: 18px;
-  line-height: 1px;
+  font-size: 15px;
+  line-height: 5px;
 }
 
 .card p
 {
   padding-left: 8px;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 5px;
 }
 
 .card
@@ -296,7 +307,7 @@ input::placeholder
   display: flex;
   flex-direction: column;
   width: 31%;
-  height: 33%;
+  height: 32%;
   border: 1px solid #F2F2F2 2px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
   padding-left: 5px;
@@ -305,7 +316,7 @@ input::placeholder
 
 #hebergements img
 {
-  height: 120px;
+  height: 130px;
   width: 98%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -319,13 +330,13 @@ input::placeholder
 .starsblue
 {
   color: #0065fc;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .starsgrey
 {
   color: #deebff;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .morediv
@@ -337,7 +348,7 @@ input::placeholder
 .morelink
 {
   
-  font-size: 23px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -348,10 +359,10 @@ input::placeholder
     flex-direction: column;
     justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px 20px 20px 20px;
     margin-right: 30px;
-    height: 630px;
+    height: 650px;
     width: 26%;
     margin-top: 50px;
 }
@@ -368,14 +379,13 @@ input::placeholder
   display:flex;
   justify-content: space-between;
   padding-left: 8px;
-  font-size: 20px;
-  margin-bottom: 13px;
-  line-height: 2px;
+  font-size: 16px;
+  
 }
 
 .famousicon
 {
-  padding-top: 18px;
+  padding-top: 20px;
   padding-right: 20px;
   font-size: 26px;
 }
@@ -392,26 +402,31 @@ input::placeholder
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
   padding-top: 4px;
   padding-left: 4px;
-  padding-top: 4px;
+}
+
+.famoustext
+{
+  display: flex;
+  flex-direction: column;
 }
 
 .famouscard p
 {
   padding-left: 8px;
-  font-size: 16px;
-  line-height: 4px;
+  padding-right: 4px;
+  font-size: 13px;
 }
 
 .famouscard h3
 {
   padding-left: 8px;
-  font-size: 18px;
-  line-height: 20px;
+  padding-right: 10px;
+  font-size: 15px;
 }
 
 #populaires img
 {
-  height: 140px;
+  height: 145px;
   width: 160px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -430,9 +445,8 @@ input::placeholder
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 100px;
-    width: 95%;
+    width: 100%;
     height: 500px;
-    padding: 5px;
 }
 
 .activitestitle
@@ -440,7 +454,6 @@ input::placeholder
   display: flex;
   flex-direction: row;
   width: 100%;
-
   margin-bottom: 30px;
 }
 
@@ -452,18 +465,17 @@ input::placeholder
   flex-direction: column;
   border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
-  width: 280px;
+  width: 22%;
   height: 85%;
   margin-bottom: 25px;
 }
 
 .activitescard img
 {
-  width: 280px;
+  width: 100%;
   height: 370px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
 }
 
@@ -494,7 +506,6 @@ input::placeholder
   height: 120px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082)
 }
 
@@ -517,7 +528,6 @@ input::placeholder
   height: 160px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082)
 }
 
@@ -531,8 +541,9 @@ footer
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 3.3vw;
+    padding-top: 30px;
     line-height: 1.5em;
-    margin-top: 50px;
+    margin-top: 30px;
     height: 280px;
 }
 
@@ -573,36 +584,50 @@ footer a
   width: 24.99999%;
 }*/
 
-@media only screen and (min-width: 2200px) /*Very large desktop*/
-  {
-
-    body, p, h1, h3, nav a
-    {
-      font-size: 34px;
-    }
-
-#hebergements p, #hebergements h3, #hebergements i, .morelink
+@media only screen and (min-width: 2200px) and (max-device-width : 4000px) /*Very large desktop*/
 {
-  font-size: 24px;
+
+body, p, h1, h3, nav a
+{
+      font-size: 28px;
+}
+
+#hebergements, #populaires, #activites
+{
+  padding: 60px;
+}
+
+#filters
+{
+  float:none;
+}
+.filterstitle
+{
+  font-size: 22px;
+}
+
+#hebergements p, #hebergements h3, #hebergements i, .morelink, #serch span
+{
+  font-size: 18px;
   line-height: 1px;
 }
 
 #populaires p, #populaires h3, #populaires i
 {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1px;
 }
 
 #activites p, #activites h3
 {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1px;
 }
 
     header a img
     {
-      width: 80%;
-      height: 60%;
+      width: 50%;
+      height: 40%;
     }
 }
   
