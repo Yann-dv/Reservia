@@ -375,10 +375,10 @@ transition: 0.4s;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 55%;
-    height: 650px;
+    width: 57%;
+    height: 665px;
     background-color: #F2F2F2;
-    padding: 20px;
+    padding: 1%;
     border-radius: 20px 20px 20px 20px;
     margin-left: 3vw;
     margin-top: 50px;
@@ -413,12 +413,13 @@ transition: 0.4s;
   border-radius: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  width: 16.5vw;
-  height: 33%;
+  width: 30%;
+  height: 31%;
   border: 1px solid #F2F2F2 2px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
   padding-left: 5px;
   padding-top: 5px;
+  margin: auto;
 }
 
 .card:hover
@@ -508,7 +509,7 @@ transition: 0.4s;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
 }
 
-.activitescard:hover, #duo1:hover, #duo2:hover
+.activitescard:hover, .duo1:hover, .duo2:hover
 {
 transform: scale(1.05);
 -webkit-transition: 0.4s;
@@ -526,7 +527,7 @@ transition: 0.4s;
   margin: 20px;
 }
 
-#duo1
+.duo1
 {
   display: flex;
   flex-direction: row;
@@ -537,7 +538,7 @@ transition: 0.4s;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 20px;
 }
-#duo1 img
+.duo1 img
 {
   width: 100%;
   height: 120px;
@@ -546,7 +547,7 @@ transition: 0.4s;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082)
 }
 
-#duo2
+.duo2
 {
   display: flex;
   width: 100%;
@@ -557,7 +558,7 @@ transition: 0.4s;
   margin-bottom: 20px;
 }
 
-#duo2 img
+.duo2 img
 {
   width: 100%;
   min-width: 100%;
@@ -614,17 +615,14 @@ footer a:hover
   width: 25%;
 }
 
-@media only screen and (min-width: 2200px) and (max-device-width : 4000px) /*Very large desktop*/
+@media only screen and (min-width: 1824px) /*Very large screen*/
 {
 
   body, p, h1, h3, h4, nav a
   {
       font-size: 28px;
   }
-  #hebergements, #populaires, #activites
-  {
-  padding: 60px;
-  }
+
 .filterstitle
   {
   font-size: 22px;
@@ -651,7 +649,7 @@ header a img
   }
 }
   
-@media only screen and (max-width: 1000px) /*Tablettes*/
+@media only screen and (max-width: 1040px) /*Tablettes*/
 {
   body, p, h3, h4, nav a
   {
@@ -667,35 +665,37 @@ header a img
   font-size: 16px;
   }
 
-  #hebergements p, #hebergements h3, #hebergements i, #populaires i, .morelink, #search span
+  #hebergements p, #hebergements h3, #search span
   {
-  font-size: 12px;
-  
+  font-size: 13px;
   }
+
+  .starsblue
+  {
+    font-size: 10px;
+  }
+
   #populaires p, #populaires h3
   {
-  font-size: 12px;
+  font-size: 13px;
   
   }
   #activites p, #activites h3
   {
-  font-size: 12px;
+  font-size: 13px;
   }
 
  .card
  {
    width: 25%;
-   margin: 2px;
+   height: 35%;
+   padding-right: 2px;   
  }
  .famouscard
  {
-  margin: 2px;
-  padding-left: 0;
+  padding-left: 4px;
  }
- .famouscardimg
- {
-   width: 50%;
- }
+
 .famoustext
 {
   display: row;
@@ -703,11 +703,10 @@ header a img
 }
  #populaires img
  {
-   width: 100%;
+    width: 110px;
  }
-}
   
-  @media only screen and (max-width: 900px) /*Smartphones view*/
+  @media only screen and (max-width: 810px) /*Smartphones view*/
   {
 
   body, h3, h4
@@ -718,6 +717,11 @@ header a img
   #populaires h2, #hebergements h2, .famousicon
   {
     font-size: 16px;
+  }
+
+  #hebergements i, #populaires i
+  {
+    font-size: 12px;
   }
 
   #search
@@ -780,7 +784,7 @@ header a img
     {
     display:flex;
     font-size: 18px;
-    margin-top: 100px;
+    margin-top: 90px;
    
     }
 
@@ -799,8 +803,8 @@ header a img
     .btn-min {
     position: relative;
     display: block;
-    bottom: 55px;
-    left: 80%;
+    bottom: 53px;
+    left: 75%;
     background-color: #0065fc;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
@@ -808,9 +812,10 @@ header a img
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    padding: 1rem 1.25rem;
+    padding: 15px 20px;
     border-top: solid #0065fc 3px;
     border-bottom: solid #0065fc 3px;
+
     }
 
     #search span .mapmarker
@@ -833,15 +838,12 @@ header a img
     {
       display: flex;
       flex-direction: column !important;
-      align-items: normal;
+      align-items: center;
       flex: 100%;
       height: auto;
       margin: 0 auto;
-      margin-left: 15px;
-      margin-bottom: 0px;
       margin-top : 15px;
       border-radius: 15px;
-      margin-bottom: 25px;
       background-color: white;
     }
 
@@ -859,38 +861,112 @@ header a img
     flex: 100%;
     height: auto;
     margin: 0 auto;
-    margin-left: 15px;
-    margin-bottom: 0px;
     margin-top : 15px;
     border-radius: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background-color: #f2f2f2;
+    border-radius: 0 0 0 0;
     }
 
     #famoustitle
     {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     }
 
     .famousicon
     {
     padding-top: 3px;
-    padding-right: 20px;
     font-size: 26px;
     }
 
     .famouscard
     {
       flex: 0;
-      height: 30%;
-      width: 100%;
+      height: 100%;
+      width: 98%;
       padding-left: 5px;
       margin-bottom: 10px;
     }
+
+    #populaires img
+    {
+      height: 120px;
+      width: 150px;
+    }
+
+    #activites
+    {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .activitescard
+    {
+    flex-basis: 12rem !important;
+    width: 90%;
+    height: 60rem;
+    margin-left: 0px;
+    margin-top: 45px;
+    margin-bottom: 0px;
+    }
+
+    .activitescard img
+    {
+    width: 100%;
+    height: 10rem;
+    }
+
+    .double
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+      height: 25%;
+      margin-bottom: 20px;
+    }
+    .duo1, .duo2
+    {
+    flex-basis: 12rem !important;
+    margin-top: 15px;
+    width: 90%;
+    height: 40%;
+    margin: 15px;
+    margin-left: 0;
+    line-height: 20px;
+    }
+    .duo1 img, .duo2 img
+    {
+    width: 100%;
+    height: 11rem;
+    }
+
+    footer
+    {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+      padding-bottom: 30px;
+      padding-top: 10px;
+    }
+
+    .apropos, .noshebergements, .assistance
+    {
+      width: 100%;
+      height: 55%;
+    }
   }
 
-  @media screen and (min-width: 765px) and (max-width: 1023px){
+  @media screen and (min-width: 795px) and (max-width: 1023px){
   }
   }
   @media screen and (max-width: 764px) {
