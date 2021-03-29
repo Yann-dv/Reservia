@@ -1,12 +1,4 @@
 /*Reservia css style*/
-@media all and (max-width: 1024px)
-{
-    body, main, header, footer
-    {
-        width: auto;
-    }
-}
-
 @font-face {
     font-family: 'raleway_italic';
     src: 'font/raleway-Italic-VariableFont_wght.ttf' format('ttf'), 
@@ -26,15 +18,18 @@
     font-stretch: 75% 125%;
     font-style: normal;
     }
-
+  html
+  {
+        width: 100%;
+  }
 body
 {
     font-family: "raleway", arial, 'Times New Roman', Times, sans-serif;
-    margin:auto;
+    margin:0;
     overflow-x: hidden;
     font-size: 16px;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -92,12 +87,14 @@ nav a
     float: right;
     margin-top: -38px;
 }
+
 nav a:hover
 {
     color: #0065FC;
     font-weight: bold;
     border-top: 3px solid #0065FC;
     padding: 51px 25px 0 25px;
+    -webkit-text-stroke: 1px #0065FC;
 }
 
 #subscrib:hover
@@ -130,7 +127,6 @@ a:visited
     margin-top: 5px;
 }
 
-
 .mapmarker
   {
     min-width: 60px;
@@ -140,6 +136,8 @@ a:visited
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 1rem 1.25rem;
+    border-top: solid #f2f2f2 1px;
+    border-bottom: solid #f2f2f2 1px;
   }
 
 .searchfield
@@ -160,7 +158,7 @@ input::placeholder
   opacity: 1;
 }
 
-.searchbutton
+.btn
   {
     font-size: 18px;
     background-color: #0065fc;
@@ -172,7 +170,17 @@ input::placeholder
     border: none;
     cursor: pointer;
     padding: 1rem 1.25rem;
+    border-top: solid #0065fc 1px;
+    border-bottom: solid #0065fc 1px;
   }
+.btn:focus {
+  outline: none;
+}
+
+.btn-min {
+  display: none;
+}
+
 /*///////////////SECTION2 filters//////////////*/
 #filters
   {
@@ -306,12 +314,20 @@ input::placeholder
   border-radius: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  width: 31%;
+  width: 16.5vw;
   height: 32%;
   border: 1px solid #F2F2F2 2px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
   padding-left: 5px;
   padding-top: 5px;
+}
+
+.card:hover
+{
+transform: scale(1.05);
+-webkit-transition: 0.4s;
+-o-transition: 0.4s;
+transition: 0.4s;
 }
 
 #hebergements img
@@ -396,12 +412,20 @@ input::placeholder
   border-radius: 20px 20px 20px 20px;
   display: flex;
   justify-content: row;
-  width: 95%;
+  width: 23vw;
   height: 23%;
   border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
   padding-top: 4px;
   padding-left: 4px;
+}
+
+.famouscard:hover
+{
+transform: scale(1.05);
+-webkit-transition: 0.4s;
+-o-transition: 0.4s;
+transition: 0.4s;
 }
 
 .famouscard a
@@ -480,6 +504,14 @@ input::placeholder
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
 }
 
+.activitescard:hover, #duo1:hover, #duo2:hover
+{
+transform: scale(1.05);
+-webkit-transition: 0.4s;
+-o-transition: 0.4s;
+transition: 0.4s;
+}
+
 .double
 {
   display: flex;
@@ -551,7 +583,10 @@ footer a
 {
   text-decoration: none;
 }
-
+footer a:hover
+{
+  -webkit-text-stroke: 1px black;
+}
 .apropos
 {
   display: flex;
@@ -670,37 +705,79 @@ header a img
   
   @media only screen and (max-width: 900px) /*Smartphones view*/
   {
-  body, p, h3, h4, nav a
+
+  body, h3, h4
   {
-  font-size: 12px;
+  font-size: 16px;
   }
 
   #populaires h2, #hebergements h2, .famousicon
   {
-    font-size: 14px;
+    font-size: 16px;
   }
-    header a img
-    {
-    width: 30%;
-    height: 70%;
-    }
+
+  #search
+  {
+    width: 100%;
+    border-bottom: #f2f2f2;
+  }
+
+  header a img
+  {
+  width: 30%;
+  height: 70%;
+  }
 
     header nav
     {
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      width: 100%;
+      margin-top: 30px;
+      padding: 0;
+      
     }
+
+    nav a
+    {
+    font-size: 20px;
+    border-bottom: 2px solid #deebff;
+    padding-left: 30px;
+    }
+
+    nav a:hover
+    {
+    border-top:none;
+    border-bottom: 2px solid #0065fc;
+    padding: 0;
+    padding-bottom: 10px;
+    }
+
     #subscrib
     {
-      text-align: right;
       margin: 0;
       padding: 0;
+      float: right;
+      border-bottom: 3px solid white;
+      position: absolute;
+      right: 25px;
+      top: -50px;
     }
+
+    #subscrib:hover
+    {
+      margin-top: 0px;
+      padding-bottom: 12px;
+    }
+  
     #search h1
     {
     display:flex;
-    text-align: justify-all;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 100px;
+   
     }
 
     nav a
@@ -710,4 +787,102 @@ header a img
       padding: 0;
       text-align: left;
     }
+
+    .btn 
+    {
+      display: none;
+    }
+    .btn-min {
+    position: relative;
+    display: block;
+    bottom: 52px;
+    left: 80%;
+    background-color: #0065fc;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.25rem;
+    border-top: solid #0065fc 1px;
+    border-bottom: solid #0065fc 1px;
+    }
+
+  #search span .mapmarker
+    {
+      height: 50px;
+      font-size: 18px;
+    }
+    .searchfield
+    {
+      width: 70%;
+    }
+
+    #filters
+    {
+      display: inline-block;
+    }
+  
+
+    #hebergements
+    {
+      display: flex;
+      flex-direction: column !important;
+      align-items: normal;
+      flex: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-left: 15px;
+      margin-bottom: 0px;
+      margin-top : 15px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      background-color: white;
+    }
+
+    .card
+    {
+      flex: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    #populaires
+    {
+    display: flex;
+    flex-direction: column !important;
+    align-items:center;
+    flex: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top : 15px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: #f2f2f2;
+    }
+
+    .famouscard
+    {
+      flex: 0;
+      width: 100%;
+    }
+
+    #famoustitle
+    {
+    display: flex;
+    }
   }
+
+  @media screen and (min-width: 765px) and (max-width: 1023px){
+  }
+  }
+  @media screen and (max-width: 764px) {
+  }
+  @media screen and (max-width: 320px) {
+
+  }
+  @media screen and (max-width: 280px) {
+     }
