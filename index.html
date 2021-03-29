@@ -5,8 +5,8 @@
     header
     section1 search
     section2 filters
-    section3 hebergements
-    section4 populaires
+    section3 populaires
+    section4 hebergements
     section5 activites
     section6 footer}-->
 
@@ -46,10 +46,7 @@
             <p>En plein centre ville ou en pleine nature</p>
             <form id="searchForm" method="post" action="traitement.php">
                 <span id="searchbar">
-                 <span class="mapmarker"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span><input type="search" class="searchfield" placeholder="Marseille, France" size="50" name="q">
-                 <button class="btn">Rechercher</button><button class="btn-min">
-                    <i class="fas fa-search search-icons"></i>
-                  </button>
+                 <span class="mapmarker"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span><input type="search" class="searchfield" placeholder="Marseille, France" size="50" name="q"><button class="btn">Rechercher</button><button class="btn-min"><i class="fas fa-search search-icons"></i></button>
                 </span>
             </form>
         </section>
@@ -91,7 +88,70 @@
             <span class="infocoin"><i class="fas fa-info" aria-hidden="true"></i></span>     
             <span class="filterdescription">Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
-      <!------------------SECTION 3 HEBERGEMENTS------------------------>
+
+    <!-------------------SECTION 3 POPULAIRES-------------------------->
+    <section id="populaires">
+        <div class="famoustitle">
+            <div><h2>Les plus populaires</h2></div>
+            <div class= "famousicon"><i class="fas fa-chart-line"></i></div>
+        </div>
+
+            <div class="famouscard">
+                <a href="#">
+                <div class="famouscardimg">
+                    <img src="images/hebergements/hotellesoleildumatin.jpg" alt="Auberge de la Cannebière" class="responsive"/>
+                    </div>
+                    <div class="famoustext">
+                    <h3 class="famouscardtitle">Hôtel Le soleil du matin</h3>
+                    <p>Nuit à partir de <strong>128€</strong></p>
+                    <span class="starsblue">
+                        <span class="firststar"><i class="fas fa-star"></i></span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+            </a></div>
+
+            <div class="famouscard">
+                <a href="#">
+                <div class="famouscardimg">
+                    <img src="images/hebergements/aucoeurdeleau.jpg" alt="Auberge de la Cannebière" class="responsive"/>
+                </div>
+                <div class="famoustext">
+                <h3 class="famouscardtitle">Au coeur de l'eau Chambre d'hôtes</h3>
+                    <p>Nuit à partir de <strong>71€</strong></p>
+                    <span class="starsblue">
+                        <span class="firststar"><i class="fas fa-star"></i></span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="starsgrey"><i class="fas fa-star"></i></span>
+                    </span>
+                </div>
+            </a></div>
+
+            <div class="famouscard">
+                <a href="#">
+                <div class="famouscardimg">
+                    <img src="images/hebergements/hoteltoutbleuetblanc.jpg" alt="Auberge de la Cannebière" class="responsive"/>
+                </div>
+                <div class="famoustext">
+                <h3 class="famouscardtitle">Hôtel Tout bleu et Blanc</h3>
+                    <p>Nuit à partir de <strong>68€</strong></p>
+                    <span class="starsblue">
+                        <span class="firststar"><i class="fas fa-star"></i></span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="starsgrey"><i class="fas fa-star"></i></span>
+                    </span>
+                </div>
+            </a></div>
+            
+        </section>
+      <!------------------SECTION 4 HEBERGEMENTS------------------------>
         <section id="hebergements">
             <h2>Hébergements à Marseille</h2>
             <div class="card">
@@ -191,68 +251,7 @@
 
             <div class="morediv"><a href="#" class="morelink">Afficher plus</a></div>
         </section>
-    <!-------------------SECTION 4 POPULAIRES-------------------------->
-        <section id="populaires">
-        <div class="famoustitle">
-            <div><h2>Les plus populaires</h2></div>
-            <div class= "famousicon"><i class="fas fa-chart-line"></i></div>
-        </div>
 
-            <div class="famouscard">
-                <a href="#">
-                <div class="famouscardimg">
-                    <img src="images/hebergements/hotellesoleildumatin.jpg" alt="Auberge de la Cannebière" class="responsive"/>
-                    </div>
-                    <div class="famoustext">
-                    <h3 class="famouscardtitle">Hôtel Le soleil du matin</h3>
-                    <p>Nuit à partir de <strong>128€</strong></p>
-                    <span class="starsblue">
-                        <span class="firststar"><i class="fas fa-star"></i></span>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </span>
-                </div>
-            </a></div>
-
-            <div class="famouscard">
-                <a href="#">
-                <div class="famouscardimg">
-                    <img src="images/hebergements/aucoeurdeleau.jpg" alt="Auberge de la Cannebière" class="responsive"/>
-                </div>
-                <div class="famoustext">
-                <h3 class="famouscardtitle">Au coeur de l'eau Chambre d'hôtes</h3>
-                    <p>Nuit à partir de <strong>71€</strong></p>
-                    <span class="starsblue">
-                        <span class="firststar"><i class="fas fa-star"></i></span>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="starsgrey"><i class="fas fa-star"></i></span>
-                    </span>
-                </div>
-            </a></div>
-
-            <div class="famouscard">
-                <a href="#">
-                <div class="famouscardimg">
-                    <img src="images/hebergements/hoteltoutbleuetblanc.jpg" alt="Auberge de la Cannebière" class="responsive"/>
-                </div>
-                <div class="famoustext">
-                <h3 class="famouscardtitle">Hôtel Tout bleu et Blanc</h3>
-                    <p>Nuit à partir de <strong>68€</strong></p>
-                    <span class="starsblue">
-                        <span class="firststar"><i class="fas fa-star"></i></span>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="starsgrey"><i class="fas fa-star"></i></span>
-                    </span>
-                </div>
-            </a></div>
-            
-        </section>
      <!-------------------SECTION 5 ACTIVITES-------------------------->
      <div  class="activitestitle"><h2>Activités à Marseille</h2></div>
      <section id="activites">
