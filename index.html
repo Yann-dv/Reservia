@@ -1,14 +1,5 @@
 <!DOCTYPE html>
-<html>
-<!--Reservia webpage-->
-<!--body{
-    header
-    section1 search
-    section2 filters
-    section3 populaires
-    section4 hebergements
-    section5 activites
-    section6 footer}-->
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
@@ -21,21 +12,23 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:title" content="Reservia" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content=https://github.com/Yann-dv/YannHagege_2_08032021.git />
+    <meta property="og:url" content=https://yann-dv.github.io/YannHagege_2_08032021/ />
     <meta property="og:description"
         content="Avec Reservia, réservez et planifier vos vacances n'aura jamais été aussi simple." />
 </head>
 
 <body>
-    <!------------------------HEADER---------------------------->
+    <!--HEADER-->
     <header>
         <a href="index.html">
             <img src="images/logo/Reservia@3x.png" alt="Reservia" class="logo" />
         </a>
         <nav>
-            <a href="#" id="subscrib">S'inscrire</a>
-            <a href="#hebergements">Hébergements</a>
-            <a href="#activites">Activités</a>
+            <div><a href="#" id="subscrib">S'inscrire</a></div>
+            <div class="indexnav">
+                <div class="indexhebergements"><a href="#hebergements">Hébergements</a></div>
+                <div class="indexactivites"><a href="#activites">Activités</a></div>
+            </div>
         </nav>
 
 
@@ -43,11 +36,11 @@
 
     <div id="main">
         <!--Main start-->
-        <!-------------------SECTION 1 SEARCH------------------------->
+        <!--SECTION 1 SEARCH-->
         <section id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form id="searchForm" method="post" action="">
+            <form id="searchForm" method="post" action="#">
                 <span id="searchbar">
                     <span class="mapmarker"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span><input
                         type="search" class="searchfield" placeholder="Marseille, France" size="50" name="q"><button
@@ -56,7 +49,7 @@
                 </span>
             </form>
         </section>
-        <!-------------------SECTION 2 FILTERS------------------------->
+        <!--SECTION 2 FILTERS-->
         <section id="filters">
             <div class="filterstitle">
                 <h2>Filtres</h2>
@@ -68,28 +61,33 @@
                             <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
                         </span>
                         <span class="filterdescription">Économique</span>
-                    </span></a>
+                    </span>
+                </a>
                 <a href="#">
                     <span class="icontextfilters">
                         <span class="filtericonfamilial">
                             <i class="fas fa-child" aria-hidden="true"></i>
                         </span>
                         <span class="filterdescription">Familial</span>
-                    </span></a>
+                    </span>
+                </a>
                 <a href="#">
                     <span class="icontextfilters">
                         <span class="filtericon">
                             <i class="fas fa-heart" aria-hidden="true"></i>
                         </span>
                         <span class="filterdescription">Romantique</span>
-                    </span></a>
+                    </span>
+                </a>
                 <a href="#">
                     <span class="icontextfilters">
                         <span class="filtericonpets">
                             <i class="fas fa-dog" aria-hidden="true"></i>
                         </span>
                         <span class="filterdescription">Animaux autorisés</span>
-                    </span></a>
+                    </span>
+                </a>
+            </div>
         </section>
 
         <div class="iconinfo">
@@ -97,7 +95,7 @@
             <span class="filterdescription">Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
 
-        <!-------------------SECTION 3 POPULAIRES-------------------------->
+        <!--SECTION 3 POPULAIRES-->
         <section id="populaires">
             <div class="famoustitle">
                 <div>
@@ -167,7 +165,7 @@
             </div>
 
         </section>
-        <!------------------SECTION 4 HEBERGEMENTS------------------------>
+        <!--SECTION 4 HEBERGEMENTS-->
         <section id="hebergements">
             <h2>Hébergements à Marseille</h2>
             <div class="card">
@@ -276,7 +274,7 @@
             <div class="morediv"><a href="#" class="morelink">Afficher plus</a></div>
         </section>
 
-        <!-------------------SECTION 5 ACTIVITES-------------------------->
+        <!--SECTION 5 ACTIVITES-->
         <div class="activitestitle">
             <h2>Activités à Marseille</h2>
         </div>
@@ -303,7 +301,7 @@
                 <div class="duo1">
                     <a href="#">
                         <div class="cardimg">
-                            <img src="images/activites/ilefrioul.jpg" alt="Îles du Frioul" class="responsive" />
+                            <img src="images/activites/ilesfrioul.jpg" alt="Îles du Frioul" class="responsive" />
                             <h3 class="cardtitle">Îles du Frioul</h3>
                         </div>
                     </a>
@@ -342,7 +340,7 @@
         </section>
     </div>
     <!--Main end-->
-    <!-------------------SECTION 6 FOOTER-------------------------->
+    <!--SECTION 6 FOOTER-->
     <footer>
         <div class="apropos">
             <h4>A propos</h4>
