@@ -1,22 +1,51 @@
 /*Reservia css style*/
 @font-face {
-  font-family: "raleway_italic";
-  src: url("font/Raleway-Italic-VariableFont_wght.ttf") format("ttf"),
-    url("font/raleway-italic-variablefont_wght-webfont.woff2") format("woff2"),
-    url("font/raleway-italic-variablefont_wght-webfont.woff") format("woff");
-  font-weight: 125 950;
-  font-style: oblique 0deg 20deg;
-}
-
-@font-face {
-  font-family: "raleway";
-  src: url("font/Raleway-VariableFont_wght.ttf") format("ttf"),
-    url("font/raleway-variablefont_wght-webfont.woff2") format("woff2"),
-    url("font/raleway-variablefont_wght-webfont.woff") format("woff");
-  font-weight: 125 950;
+  font-family: "ralewaythin_italic";
+  src: url("raleway-italic-variablefont_wght-webfont.woff2") format("woff2"),
+    url("raleway-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ralewaythin";
+  src: url("raleway-variablefont_wght-webfont.woff2") format("woff2"),
+    url("raleway-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaythin_italic";
+  src: url("raleway-italic-variablefont_wght-webfont.woff2") format("woff2"),
+    url("raleway-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaythin";
+  src: url("raleway-variablefont_wght-webfont.woff2") format("woff2"),
+    url("raleway-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaythin_italic";
+  src: url("raleway-italic-variablefont_wght-webfont.woff2") format("woff2"),
+    url("raleway-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaythin";
+  src: url("raleway-variablefont_wght-webfont.woff2") format("woff2"),
+    url("raleway-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   width: 100%;
 }
@@ -37,6 +66,7 @@ a {
 }
 
 #main {
+  font-family: "raleway", arial, "Times New Roman", Times, sans-serif;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
