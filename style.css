@@ -489,7 +489,7 @@ input::placeholder {
 
 .activitescard img {
   width: 100%;
-  height: 370px;
+  height: 390px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
@@ -510,22 +510,24 @@ input::placeholder {
   flex-wrap: wrap;
   width: 23%;
   flex-direction: column;
-  margin: 20px;
+  margin: 15px;
+  margin-top: 20px;
 }
 
 .duo1 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 180px;
+  height: 190px;
   border: 1px solid #f2f2f2;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
   border-radius: 20px 20px 20px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .duo1 img {
-  width: 100%;
-  height: 120px;
+  width: 1500px;
+  max-width: 100%;
+  height: 130px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
@@ -535,15 +537,16 @@ input::placeholder {
 .duo2 {
   display: flex;
   width: 100%;
-  height: 220px;
+  height: 210px;
   border: 1px solid #f2f2f2;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
   border-radius: 20px 20px 20px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .duo2 img {
-  width: 100%;
+  width: 1920px;
+  max-width: 100%;
   height: 160px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -893,7 +896,7 @@ footer a:hover {
   .activitescard {
     flex-basis: 12rem !important;
     width: 350px;
-    margin-left: 0px;
+    margin-left: 20px;
   }
 
   .activitescard img {
@@ -922,6 +925,7 @@ footer a:hover {
     margin: 20px;
     margin-left: 0;
     line-height: 20px;
+    margin-left: 20px;
   }
 
   .duo1 img,
