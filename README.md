@@ -19,4 +19,7 @@ Développement from scratch, utilisant les languages html et css, mis en place s
   - Aucun framework
   - Compatible tout navigateur
   - W3C validation
+
+* Maquette : 
+
 ![Desktop - 1](https://user-images.githubusercontent.com/79877110/136531013-546c3499-92aa-4a11-84d2-b262f771d80c.png)
